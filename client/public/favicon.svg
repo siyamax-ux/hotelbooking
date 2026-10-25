@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5d060"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark background circle -->
+  <circle cx="32" cy="32" r="32" fill="url(#bgGrad)"/>
+
+  <!-- Hotel building silhouette -->
+  <!-- Main building body -->
+  <rect x="14" y="28" width="36" height="22" rx="2" fill="url(#goldGrad)"/>
+
+  <!-- Roof / top peak -->
+  <polygon points="10,28 32,12 54,28" fill="#c89d1a"/>
+
+  <!-- Door -->
+  <rect x="27" y="38" width="10" height="12" rx="1.5" fill="#1a1a2e"/>
+
+  <!-- Windows row 1 -->
+  <rect x="17" y="31" width="5" height="4" rx="1" fill="#1a1a2e" opacity="0.7"/>
+  <rect x="29.5" y="31" width="5" height="4" rx="1" fill="#1a1a2e" opacity="0.7"/>
+  <rect x="42" y="31" width="5" height="4" rx="1" fill="#1a1a2e" opacity="0.7"/>
+
+  <!-- Windows row 2 -->
+  <rect x="17" y="37" width="5" height="4" rx="1" fill="#1a1a2e" opacity="0.7"/>
+  <rect x="42" y="37" width="5" height="4" rx="1" fill="#1a1a2e" opacity="0.7"/>
+
+  <!-- Star on roof peak (luxury touch) -->
+  <polygon points="32,14 33.2,17.4 36.8,17.4 34,19.6 35.1,23 32,21 28.9,23 30,19.6 27.2,17.4 30.8,17.4"
+           fill="#fff" opacity="0.95" transform="scale(0.55) translate(26, 8)"/>
+
+  <!-- Gold accent line at base of roof -->
+  <rect x="12" y="27" width="40" height="2" rx="1" fill="#f5d060" opacity="0.5"/>
+</svg>

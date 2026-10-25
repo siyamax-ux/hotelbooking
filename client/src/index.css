@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+/* ── Global Design Tokens ── */
+:root {
+  --gold: #d4af37;
+  --gold-light: #f0d060;
+  --bg-dark: #0a0a0a;
+  --text-dark: #f0f0f0;
+  --radius-xl: 1.5rem;
+  --shadow-luxury: 0 20px 60px -10px rgba(0,0,0,0.15);
+}
+
+/* ── Base Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Luxury Serif Headings ── */
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ── Scrollbar Styling ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 100px; }
+
+/* ── Smooth Image Loading ── */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* ── Glass Effect Utility ── */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ── Focus Ring ── */
+:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 2px;
+}
+
+/* ── Ken Burns Animation for Hero ── */
+@keyframes kenBurns {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.ken-burns {
+  animation: kenBurns 12s ease-in-out infinite alternate;
+}
+
+/* ── Gradient Text Utility ── */
+.gradient-text {
+  background: linear-gradient(135deg, #d4af37 0%, #f0d060 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
